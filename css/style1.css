@@ -1,0 +1,335 @@
+*{
+   margin: 0;
+   padding: 0;
+   /* background-color: black; */
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+}
+.logo a {
+text-shadow: 2px 2px 5px black;
+font-weight: bold;
+color: rgb(1, 2, 2);
+font-size: 2rem;
+letter-spacing: 1;
+}
+.searcharea{
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    width: 170px;
+    height: 45px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 1px 1px 5px black;
+    box-sizing: border-box;
+    z-index: 1;
+    border: 1px solid gray;
+}
+.searchbox input{
+    width: 90px;
+height: 20px;
+border: none;
+outline: none;
+background-color: transparent;
+color: black;
+font-family: calibri;
+font-size: 1rem;
+padding: 0px 10px;
+}
+.searchbox input::placeholder{
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: poppins;
+
+}
+.section1{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%,-50%);
+}
+.section1 img{
+    height: 400px;
+}
+.sectionbutton{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-90%,-50%);
+
+}
+.setionbutton h2, h1{
+    font-family: roboto;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 60px;
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgb(59, 49, 49);
+    letter-spacing: 10px;
+    color: grey;
+    text-transform: uppercase;
+}
+.sectionbutton h2{
+    color: blue;
+    font-size: 3rem;
+}
+span{
+    color: blueviolet;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: aquamarine;
+    box-shadow: 3px 3px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    margin-top: 20px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    border: transparent !important;
+}
+.btn:hover{
+    color: darkred;
+    background-color:green;
+    transition: all ease 0.5s;
+}
+.iconarea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+.iconarea{
+    position: fixed;
+    left: 30px;
+    top: 50px;
+    transform: translate(-50%);
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 6px black;
+    padding: 5px 0px;
+    z-index: 1;
+}
+.iconarea a i{
+    color: #000;
+
+}
+.iconarea a:hover .fa-facebook{
+    color: aqua;
+}
+.iconarea a:hover .fa-twitter{
+    color: rgb(202, 183, 11);
+}
+.iconarea a:hover .fa-instagram{
+    color: rgb(214, 19, 19);
+}
+.iconarea a:hover .fa-youtube{
+    color: rgb(224, 29, 62);
+}
+.productsection{
+    width: 85%;
+    background-color: rgb(240, 230, 230);
+    box-shadow: 2px 2px 4px black;
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    padding: 40px 20px ;
+    margin-top: 60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+}
+.productsection > h3{
+    margin: 20px;
+    text-shadow: 2px 2px 3px black;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(17, 19, 19);
+
+    
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+.productbox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.productbox img{
+    height: 180px;
+    widt: 300px;
+}
+.productbox p{
+    color: rgb(17, 19, 19);
+    font-size: 1rem;
+
+}
+.buybtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50%);
+    border-radius: 15% 15% 15% 155 / 50% 50% 50% 50%;
+    background: linear-gradient(120deg, rgba(206, 6, 212, 0.514) 20%, rgb(34, 13, 224) );
+    color: azure;
+display: non;
+animation: fade 0.5s;    
+}
+.productbox:hover .buybtn{
+    display: flex;
+
+}
+.productbox:hover{
+    box-shadow: 3px 3px 7px black;
+    color: aliceblue ;
+    
+
+}
+.productbox:hover a:last-child{
+    color: rgb(19, 161, 204);
+    transition: all ease 03s;
+    font-weight: bold;
+}
+.about{
+    display: flex;
+    width: 85%;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+.aboutbox{
+    width: 40%;
+
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutbox h2{
+    color: black;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0px;
+}
+.aboutbox h4{
+    color: black;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aboutbox p{
+    font-size: 1rem;
+    color: rgb(17, 19, 20);
+    letter-spacing: 0.5px;
+}
+.notification{
+    width: 100%;
+    height: 250px;
+    border-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.notification h3{
+    font-size: 2rem;
+    color: #000; 
+}
+.notificationinput{
+    width: 500px;
+    background-color: white;
+    border-radius: 7% / 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 3px 7px black;
+    margin-top: 30px;
+}
+.notification input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.notificationbutton{
+    width: 120px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 20px;
+    color: rgb(86, 214, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 7px black;
+    font-size: 1rem;
+}
+.notificationbutton:hover{
+    background-color: blue;
+    transition: all ease 0.3s;
+}
+footer{
+    background-color: #000;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+color: beige;
+}
+video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
